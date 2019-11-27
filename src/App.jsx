@@ -3,13 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import Spark from 'components/Spark';
 import Encourage from 'components/Encourage';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
-const theme = {
-  colors: {
-    red: '#f44242',
-    green: '#68BB59',
-  },
-};
+import theme from 'theme';
 
 const App = () => (
   <ThemeProvider theme={theme}>
