@@ -5,7 +5,9 @@ const ScrollTop = () => {
   // scroll to top of screen on new path
   const { pathname } = useLocation();
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (process.env.NODE_ENV === 'production') {
+     window.scrollTo(0, 0); 
+    }
   }, [pathname])  
   
   return null;

@@ -6,6 +6,7 @@ import Landing from 'components/common/Landing';
 import Next from 'components/common/Next';
 import Puppet from './Puppet';
 import Behavior from './Behavior';
+import Purchase from './Purchase';
 
 const Container = s.div`
 
@@ -22,6 +23,7 @@ const Encourage = () => (
     />
     <Puppet />
     <Behavior />
+    <Purchase />
     <Next topic="" />
   </Container>
 );
