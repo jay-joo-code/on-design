@@ -4,9 +4,6 @@ import { ReactComponent as LeftArrow } from 'icons/left-arrow.svg';
 import s from 'styled-components';
 
 const IconWrapper = s.div`
-  position: fixed;
-  top: 5rem;
-  left: 5rem;
 `;
 
 const IconContainer = s.div`

@@ -29,17 +29,18 @@ const Topic = s.h3`
   
 `;
 
-const Next = () => {
+const Next = (props) => {
+  const { topic, nextUrl } = props;
   const history = useHistory();
   const handleClick = () => {
-    history.push('/encourage');
+    history.push(nextUrl);
   };
 
   return (
     <Container onClick={handleClick}>
       <TextContainer>
         <NextText>Next</NextText>
-        <Topic>Encourage</Topic>
+        <Topic>{topic}</Topic>
       </TextContainer>
     </Container>
   );
